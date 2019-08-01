@@ -1,0 +1,27 @@
+.slider {
+  color: $slider-color;
+  .carousel-item {
+    padding: 3em 0;
+    background-color: $slider-bg;
+  }
+  &-btn {
+    padding: $slider-btn-padding;
+    font-size: $slider-btn-size;
+    line-height: $slider-btn-line-height;
+    color: $slider-color;
+    border-radius: $slider-btn-border-radius;
+    white-space: nowrap;
+    &:hover {
+      color: lighten($slider-color, 10%);
+      text-decoration: none;
+    }
+    &-primary {
+      background-color: $slider-btn-bg-primary;
+    }
+    &-secondary {
+      border: 2px solid $slider-color;
+    }
+  }
+
+
+}

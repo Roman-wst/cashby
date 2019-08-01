@@ -1,0 +1,80 @@
+@import "variables";
+@import "slider";
+
+body {
+  background-color: $body-bg;
+}
+
+a {
+  color: $link-color;
+  &:hover {
+    color: $link-hover-color;
+  }
+  &:active {
+    color: $link-active-color;
+  }
+}
+
+.container-fluid {
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+
+/* header's style */
+.header {
+  &-top {
+    padding: 7px 0;
+    color: #fff;
+    background-color: $base-color-text;
+  }
+  &-bottom {
+    padding: 11px 0;
+    background-color: #eee;
+  }
+  &-nav {
+    font-size: 1.1rem;
+    .upload-check {
+      width: 27px;
+      height: 33px;
+      fill: $slider-btn-bg-primary;
+    }
+  }
+
+}
+
+.main-content {
+  padding: 5em 0 10em;
+}
+
+
+.ic {
+  width: 40px;
+  height: 40px;
+  fill: $icon-color;
+  &:hover {
+    fill: darken($icon-color, 20%);
+  }
+  &-login {
+    width: 18px;
+    height: 18px;
+    margin-right: 10px;
+    fill: #fff;
+  }
+}
+
+.component-search {
+  position: relative;
+  .form-control {
+    padding-right: 3em;
+    border-radius: 2em;
+    border: 1px solid #eee;
+  }
+  .btn-search {
+    margin-left: -3.5rem;
+    .ic {
+       width: 24px;
+       height: 22px;
+     }
+  }
+}
